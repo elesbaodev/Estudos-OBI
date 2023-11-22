@@ -1,18 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    float nota1,nota2;
-    int media;
-    media = (nota1 + nota2) /2;
-    switch (media)
-    {
-    case 7:
+    float nota1,nota2,media;
+    scanf("%f%f", &nota1, &nota2);
+    media = ((nota1*2)+(nota2*3)) / 5; 
+    if (media >= 7) {
         printf("Aprovado\n");
-        break;
-    case 3:
+    } else if (media < 3) {
         printf("Reprovado\n");
-        break;
-    default:
-        printf("Final");
+    } else {
+        printf("Final\n");
     }
+    return 0;
 }
