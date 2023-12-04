@@ -2,10 +2,11 @@
 
 int main() {
     int alunos,monitores;
-    scanf("%d%d", &alunos, &monitores);
-    if(alunos + monitores <= 50) {
-        printf("S");
+    scanf("%d%d", &alunos,&monitores);
+    if(alunos + monitores > 50) {
+        printf("N\n");
     } else {
-        printf("N");
+        printf("S\n");
     }
+    return 0;
 }
