@@ -1,19 +1,20 @@
 #include <iostream>
-
 using namespace std;
 
 int main(void) {
-    int paes,doces,bolos,produtos;
-    cin >> paes >> doces >> bolos;
-    produtos = (paes * 1) + (doces * 2) + (bolos * 3);
-    if(produtos >= 150) {
-        cout << "B";
-    } else if (produtos >= 120) {
-        cout << "D";
-    } else if (produtos >= 100) {
-        cout << "P";
-    } else {
-        cout << "N";
-    }
+    int n,s=0,dias=0,i,premio = 1000000;
+    cin >> n;
+    int d[n];
     
+    for( i = 0; i < n; i++) {
+        cin >> d[i];
+        if(d[0] == premio) {
+            dias = 1;
+            cout << dias << endl;
+        }
+       if(d[0] + d[i] < premio) {
+            dias = i;
+            cout << dias << endl;
+       }
+    }
 }
