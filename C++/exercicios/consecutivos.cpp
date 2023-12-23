@@ -3,16 +3,14 @@ using namespace std;
 
 int main(void) {
     int n;
-    int copos=0;
     cin >> n;
+    int v,valores = 0;
     for(int i = 0; i < n; i++) {
-        int l,c;
-        cin >> l >> c;
+        cin >> v;
 
-        if(l > c) {
-            copos += c;
-
+        if(v == v + 1) {
+            valores = i + 1;
+            cout << valores << endl;
         }
     }
-    cout << copos << endl;
 }

@@ -1,24 +1,18 @@
 #include <iostream>
-
 using namespace std;
 
 int main(void) {
-    int n, i;
+    int n;
     cin >> n;
-    int l[n];
-    int a = 0, b = 0;
-
-    for (i = 0; i < n; i++) {
-        cin >> l[i];
-        if (l[i] == 1) {
-            a = 1 - a;  // Inverte o estado da lâmpada A
-        } else if (l[i] == 2) {
-            a = 1 - a;  // Inverte o estado da lâmpada A
-            b = 1 - b;  // Inverte o estado da lâmpada B
+    int a= 0,b= 0,l;
+    for(int i = 0; i < n; i++) {
+        cin >> l;
+        if(l == 1) {
+            a = 1 - a;
+        }  else if(l == 2) {
+            a = 1 - a;
+            b = 1 - b;
         }
-    }
-
-    cout << a << endl << b;
-
+    } cout << a << endl << b;
     return 0;
 }
