@@ -16,8 +16,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Estudos-OBI/exercicios",
-      "program": "c:/Estudos-OBI/exercicios/build/Debug/outDebug",
+      "cwd": "c:/Estudos-OBI/C++/exercicios",
+      "program": "c:/Estudos-OBI/C++/exercicios/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
